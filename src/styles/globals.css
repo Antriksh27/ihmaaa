@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* JA University T3 Blue Theme System */
+  --bg-body: #ffffff;
+  --bg-section-alt: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-card-hover: #ffffff;
+  --bg-card-border: #e2e8f0;
+  --bg-card-border-hover: #205f93;
+
+  /* Brand Colors from JA University T3 Blue */
+  --brand-primary: #205f93;
+  --brand-primary-hover: #184978;
+  --brand-primary-light: #eaf1f7;
+  --brand-accent: #e09b0f;
+  --brand-accent-hover: #c78608;
+
+  /* Header & Navigation Colors */
+  --header-bg: #0c426f;
+  --header-border: #09355a;
+  --nav-bg: #0c426f;
+  --nav-border: #1f537e;
+  --nav-active-bg: #1b5280;
+  --nav-active-border: #e09b0f;
+  --nav-link-color: #eaf1f7;
+
+  /* Dropdown / Megamenu */
+  --dropdown-bg: #1b5280;
+  --dropdown-border: #2a6392;
+  --dropdown-link: #a7c3db;
+  --dropdown-link-hover: #ffffff;
+
+  /* Spotlights & Footer from JA University T3 */
+  --spotlight-bg: #0a3966;
+  --spotlight-text: #6991b7;
+  --spotlight-title: #d9dee4;
+  --footer-bg: #083158;
+  --footer-border: #184978;
+  --footer-text: #94a3b8;
+
+  /* Text Colors */
+  --text-heading: #0f172a;
+  --text-body: #334155;
+  --text-muted: #64748b;
+  --text-light: #ffffff;
+
+  /* Shadows */
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --card-shadow-hover: 0 10px 25px rgba(32, 95, 147, 0.12);
+
+  /* Typography */
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  --font-display: 'Outfit', sans-serif;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--bg-body);
+  color: var(--text-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-body);
+  color: var(--text-body);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Typography styles */
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  color: var(--text-heading);
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: clamp(1.85rem, 4vw, 2.65rem);
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: clamp(1.45rem, 3vw, 2.05rem);
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+  line-height: 1.35;
+}
+
+p {
+  color: var(--text-body);
+  font-size: 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+/* Layout Utilities */
+.section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  position: relative;
+}
+
+.section-alt {
+  background-color: var(--bg-section-alt);
+}
+
+.section-title-wrap {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3rem auto;
+}
+
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: rgba(32, 95, 147, 0.08);
+  border: 1px solid rgba(32, 95, 147, 0.25);
+  color: var(--brand-primary);
+  margin-bottom: 0.85rem;
+}
+
+.section-title {
+  margin-bottom: 0.75rem;
+  color: var(--text-heading);
+  font-size: clamp(1.6rem, 3.2vw, 2.25rem);
+}
+
+.section-desc {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+}
+
+/* JA University Card Style */
+.glass-card, .ja-card {
+  background: var(--bg-card);
+  border: 1px solid var(--bg-card-border);
+  border-radius: 8px;
+  padding: 1.75rem;
+  transition: all var(--transition-normal);
+  box-shadow: var(--card-shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-card:hover, .ja-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--brand-primary);
+  transform: translateY(-3px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 0.75rem 1.6rem;
+  border-radius: 6px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  border: none;
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.btn-primary {
+  background: var(--brand-primary);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(32, 95, 147, 0.25);
+}
+
+.btn-primary:hover {
+  background: var(--brand-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(32, 95, 147, 0.35);
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background: #f1f5f9;
+  color: #0f172a;
+  border: 1px solid #cbd5e1;
+}
+
+.btn-secondary:hover {
+  background: #e2e8f0;
+  border-color: #94a3b8;
+  color: #0f172a;
+  transform: translateY(-2px);
+}
+
+.btn-outline-gold, .btn-accent {
+  background: var(--brand-accent);
+  color: #ffffff;
+  border: 1px solid var(--brand-accent);
+  box-shadow: 0 4px 14px rgba(224, 155, 15, 0.25);
+}
+
+.btn-outline-gold:hover, .btn-accent:hover {
+  background: var(--brand-accent-hover);
+  border-color: var(--brand-accent-hover);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(224, 155, 15, 0.35);
+}
+
+/* Highlight Colors */
+.gold-text {
+  color: var(--brand-accent);
+}
+
+.primary-text {
+  color: var(--brand-primary);
+}
+
+.gold-gradient-text {
+  color: var(--brand-accent);
+  font-weight: 700;
+}
+
+/* Grid Layouts */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.75rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1.75rem;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Badge */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: #f1f5f9;
+  color: var(--text-muted);
+}
+
+.badge-gold {
+  background: rgba(224, 155, 15, 0.12);
+  color: #c78608;
+  border: 1px solid rgba(224, 155, 15, 0.3);
+}
+
+.badge-primary {
+  background: rgba(32, 95, 147, 0.1);
+  color: var(--brand-primary);
+  border: 1px solid rgba(32, 95, 147, 0.25);
+}
+
+/* Content HTML Renderer */
+.prose-content {
+  color: var(--text-body);
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.prose-content p {
+  margin-bottom: 1.25rem;
+  color: var(--text-body);
+}
+
+.prose-content h2, .prose-content h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.85rem;
+  color: var(--text-heading);
+}
+
+.prose-content ul, .prose-content ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.prose-content li {
+  margin-bottom: 0.4rem;
+}
+
+.prose-content a {
+  color: var(--brand-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.prose-content a:hover {
+  color: var(--brand-primary-hover);
+}
+
+.prose-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+.prose-content th, .prose-content td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+.prose-content th {
+  background: #f1f5f9;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.prose-content tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+.prose-content img, .prose-content .img-border {
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 6px;
+  background: #ffffff;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* JA University Custom Styles */
+.round-img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.quotes {
+  font-size: 0.95em;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  padding: 1rem;
+  background: #f8fafc;
+  border-left: 4px solid var(--brand-primary);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}

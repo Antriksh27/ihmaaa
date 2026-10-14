@@ -1,0 +1,37 @@
+export const siteConfig = {
+  name: 'IHMAAA',
+  fullName: 'Institute of Hotel Management Ahmedabad Alumni Association',
+  tagline: 'Connecting Generations of Hospitality Excellence',
+  address: {
+    line1: 'Institute of Hotel Management Ahmedabad Alumni Association',
+    line2: 'Bhaijipura Patia, P.O. Koba',
+    city: 'Gandhinagar',
+    state: 'Gujarat',
+    pincode: '382426',
+    country: 'India',
+  },
+  contact: {
+    phoneOffice: '+91-79-265-82-674',
+    phoneMobile1: '+91-76000-99040',
+    phoneMobile2: '+91-98242-27837',
+    email: 'mail@ihmaaa.com',
+  },
+  bankDetails: {
+    bankName: 'State Bank of India',
+    accountName: 'Institute of Hotel Management Ahmedabad Alumni Association',
+    accountNumber: '33578571766',
+    branch: 'Kudasan (Branch Code: 14975)',
+    ifscCode: 'SBIN0014975',
+    micrCode: '380002178',
+    branchAddress: 'Radhe Arcade, Village Kudasan, Gandhinagar, Gujarat',
+    supportMessage: 'Support IHMAAA with Rs. 1000 minimum or as per your wish. NEFT / RTGS / Cheque accepted.',
+  },
+  socialLinks: {
+    facebookPage: 'https://www.facebook.com/IHMAAAPage',
+    facebookGroup: 'https://www.facebook.com/groups/ihmaaa/',
+    linkedin: 'https://www.linkedin.com/company/ihmaaa-official/',
+    almaconnect: 'https://ihmaaa.almaconnect.com/signup',
+    youtube: 'https://www.youtube.com',
+    twitter: 'https://twitter.com',
+  },
+};

@@ -1,0 +1,54 @@
+# ============================================================
+# IHMAAA - Hostinger Apache / .htaccess Configuration
+# ============================================================
+
+RewriteEngine On
+RewriteBase /
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ------------------------------------------------------------
+# 301 Permanent Redirects for Historical Joomla URLs
+# ------------------------------------------------------------
+
+# Redirect /contact-us to /sponsors
+RewriteRule ^contact-us/?$ /sponsors [R=301,L]
+
+# Redirect Joomla Query Strings (com_content)
+RewriteCond %{QUERY_STRING} (?:^|&)id=1(?:&|$)
+RewriteRule ^index\.php$ /ihmaaa/about-us? [R=301,L]
+
+RewriteCond %{QUERY_STRING} (?:^|&)id=2(?:&|$)
+RewriteRule ^index\.php$ /ihmaaa/about-us/chairmans-message? [R=301,L]
+
+RewriteCond %{QUERY_STRING} (?:^|&)id=3(?:&|$)
+RewriteRule ^index\.php$ /ihmaaa/about-us/president-s-message? [R=301,L]
+
+RewriteCond %{QUERY_STRING} (?:^|&)id=4(?:&|$)
+RewriteRule ^index\.php$ /ihmaaa/about-us/founder-principal-s-message? [R=301,L]
+
+RewriteCond %{QUERY_STRING} (?:^|&)id=8(?:&|$)
+RewriteRule ^index\.php$ /ihmaaa/about-us/member-s-list? [R=301,L]
+
+RewriteCond %{QUERY_STRING} (?:^|&)id=79(?:&|$)
+RewriteRule ^index\.php$ /sponsors? [R=301,L]
+
+RewriteCond %{QUERY_STRING} (?:^|&)id=80(?:&|$)
+RewriteRule ^index\.php$ /news-events/ihmaaa-news? [R=301,L]
+
+# ------------------------------------------------------------
+# Clean HTML routing (extensionless URLs for static export)
+# ------------------------------------------------------------
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Security Headers
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set X-XSS-Protection "1; mode=block"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

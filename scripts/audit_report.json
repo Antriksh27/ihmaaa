@@ -1,0 +1,519 @@
+{
+  "working": [
+    {
+      "url": "/sitemap.xml",
+      "status": 200
+    },
+    {
+      "url": "/robots.txt",
+      "status": 200
+    }
+  ],
+  "redirects": [
+    {
+      "url": "/social-views/photo-albums/ihmaaa-reunion-2016-crowne-plaza-ahmedabad",
+      "status": 307,
+      "location": "/social-views/photo-albums?album=ihmaaa-reunion-2016-crowne-plaza-ahmedabad"
+    },
+    {
+      "url": "/social-views/photo-albums/ihmaaa-reunion-2016-ihm-campus-gandhinagar",
+      "status": 307,
+      "location": "/social-views/photo-albums?album=ihmaaa-reunion-2016-ihm-campus-gandhinagar"
+    },
+    {
+      "url": "/social-views/photo-albums/ihmaaa-reunion-2016-old-ihm-polytechnic",
+      "status": 307,
+      "location": "/social-views/photo-albums?album=ihmaaa-reunion-2016-old-ihm-polytechnic"
+    },
+    {
+      "url": "/social-views/photo-albums/ihmaaa-annual-alumni-meet-03-04-2016",
+      "status": 307,
+      "location": "/social-views/photo-albums?album=ihmaaa-annual-alumni-meet-03-04-2016"
+    },
+    {
+      "url": "/social-views/photo-albums/alumni-batches-1972-2016",
+      "status": 307,
+      "location": "/social-views/photo-albums?album=alumni-batches-1972-2016"
+    },
+    {
+      "url": "/social-views/photo-albums/ihm-ahmedabad-annual-function-06-04-2016",
+      "status": 307,
+      "location": "/social-views/photo-albums?album=ihm-ahmedabad-annual-function-06-04-2016"
+    },
+    {
+      "url": "/social-views/photo-albums/ihm-ahmedabad-annual-day-2014",
+      "status": 307,
+      "location": "/social-views/photo-albums?album=ihm-ahmedabad-annual-day-2014"
+    },
+    {
+      "url": "/social-views/photo-albums/Awards-Farewell-2014-Batch",
+      "status": 307,
+      "location": "/social-views/photo-albums?album=Awards-Farewell-2014-Batch"
+    },
+    {
+      "url": "/social-views/photo-albums/reunion-2014",
+      "status": 307,
+      "location": "/social-views/photo-albums?album=reunion-2014"
+    },
+    {
+      "url": "/social-views/photo-albums/ihm-ahmedabad-2014",
+      "status": 307,
+      "location": "/social-views/photo-albums?album=ihm-ahmedabad-2014"
+    },
+    {
+      "url": "/social-views/photo-albums/galleria",
+      "status": 307,
+      "location": "/social-views/photo-albums?album=galleria"
+    },
+    {
+      "url": "/social-views/photo-albums/ihm-campus",
+      "status": 307,
+      "location": "/social-views/photo-albums?album=ihm-campus"
+    }
+  ],
+  "broken": [
+    {
+      "url": "/",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/ihmaaa/about-us",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/ihmaaa/about-us/chairmans-message",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/ihmaaa/about-us/president-s-message",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/ihmaaa/about-us/founder-principal-s-message",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/ihmaaa/about-us/office-bearers",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/ihmaaa/about-us/member-s-list",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/ihmaaa/aims-objectives/memorandum-of-association",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/ihmaaa/aims-objectives/article-of-association",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/ihmaaa/aims-objectives/downloads",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/curriculum-vitae",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/vacancies/hotels-restaurants",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/social-views/photo-albums",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/social-views/user-page-blog",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/social-views/social-connect",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/sponsors",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/contact-us",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/search",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/about-us",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/chairmans-message",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/president-s-message",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/articles-category-module",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/mr-anil-goyal",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/mr-bhaskar-sharma",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/mr-harjinder-s-sandhu",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/ihmaaa-members-list",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/memorandum-of-association",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/article-of-association",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/downloads",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/punit-vyas-fb",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/pratik-gambhir-mo",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/mayur-sharma-foo",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/ketan-parmar-m-o",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/nitin-shinde-qsr",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/sevens-holding-spc-bahrain",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/global-gourmet",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/oven-magick-vadodara",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/summining-hr-mumbai",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/sevens-holding-spc-bahrain-kitchen",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/laxmi-tent-house",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/kanhai-foods-pvt-ltd",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/gopi-group",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/vadilal-group",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/narayani-hotel",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/hotel-palms",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/surya-palace",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/kabir-banquets-conventions",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/indulgence",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/oven-magick",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/bombay-chop-stix",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/sonic-stage",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/gama-hotel-management",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/rahul-tandon",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/alfa-group-of-companies",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/veeru-s-nonveg-restaurant-take-away",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/shiv-group-of-hotels",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/all-hotel-supplies",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/tusk-roar-corbett-resort",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/events-hospitality-services",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/poonjiaji",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/hey-days-cafe",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/kunal-restaurant",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/youtube",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/facebook-group",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/twitter",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/facebook-page",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/pledge-your-organs-donor-card",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/ms-anushka-dias-awarded-chef-roy-memorial-trophy",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/ihmaaa-s-tribute-to-chef-roy",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/ihmaaa-alumni-awards-at-farewell-2014-batch",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/ihmaaa-website-released",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/ihmaaa-reunion-2016",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/ihm-ahmedabad-has-ranked-3rd-across-the-country-ghrdcsurvey2014",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/another-feather-in-our-cap",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/news-events/ihmaaa-news/13-03-2014-ihm-ahmedabad-s-annual-day-celebrated",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/social-views/photo-albums?album=ihmaaa-reunion-2016-crowne-plaza-ahmedabad",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/social-views/photo-albums?album=ihmaaa-reunion-2016-ihm-campus-gandhinagar",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/social-views/photo-albums?album=ihmaaa-reunion-2016-old-ihm-polytechnic",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/social-views/photo-albums?album=ihmaaa-annual-alumni-meet-03-04-2016",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/social-views/photo-albums?album=alumni-batches-1972-2016",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/social-views/photo-albums?album=ihm-ahmedabad-annual-function-06-04-2016",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/social-views/photo-albums?album=ihm-ahmedabad-annual-day-2014",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/social-views/photo-albums?album=Awards-Farewell-2014-Batch",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/social-views/photo-albums?album=reunion-2014",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/social-views/photo-albums?album=ihm-ahmedabad-2014",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/social-views/photo-albums?album=galleria",
+      "status": 200,
+      "error": "404 Not Found"
+    },
+    {
+      "url": "/social-views/photo-albums?album=ihm-campus",
+      "status": 200,
+      "error": "404 Not Found"
+    }
+  ],
+  "imagesWorking": [],
+  "imagesBroken": [],
+  "legacyOrMalformedLinks": []
+}
